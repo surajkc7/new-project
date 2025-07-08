@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 700px;
+        width: 700px;
+        border: 1px solid black;
+        display: flex;
+        /* flex-direction: row; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-around  */
+        /* flex-wrap: wrap; */
+         /* justify-content: center; */
+        /* align-content: center; */
+
+    }
+    #box {
+        height: 150px;
+        width: 550px;
+        margin: 8px 5px 5px 8px;
+        color: wheat;
+        font-size: 100px;
+    }
+    .first {
+        background-color: blue;
+        /* align-self: center; */
+    }
+    .second {
+        background-color: red;
+        /* align-self: flex-end; */
+    }
+    .third {
+        background-color: aquamarine;
+        /* align-self: first baseline; */
+        flex-shrink: 0.5;
+    }
+    .fourth{
+        background-color: black;
+        /* align-self: normal; */
+    }
+    .fifth{
+        background-color: blueviolet;
+        /* align-self: inherit; */
+    }
+    .sixth{
+        background-color:gray;
+        /* align-self: unset; */
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="first" id="box">1</div>
+    <div class="second" id="box">2</div>
+    <div class="third" id="box">3</div>
+    <div class="fourth" id="box">4</div>
+    <div class="fifth" id="box">5</div>
+    <div class="sixth" id="box">6</div>
+    </div>
+</body>
+</html>
